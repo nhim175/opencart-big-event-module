@@ -26,7 +26,21 @@
           <td><?php echo $entry_link; ?></td>
           <td><input type="text" name="link" value="<?php echo $link; ?>" /></td>
         </tr>
+
+        <tr>
+          <td><?php echo $entry_once_per_session; ?></td>
+          <td>
+            <?php if ($once_per_session) { ?>
+              <input type="radio" name="once_per_session" value="1" checked="checked"/>Yes
+              <input type="radio" name="once_per_session" value="0"/>No
+            <?php } else { ?>
+              <input type="radio" name="once_per_session" value="1"/>Yes
+              <input type="radio" name="once_per_session" value="0" checked="checked"/>No
+            <?php } ?>
+          </td>
+        </tr>
       </table>
+
       <table id="module" class="list">
         <thead>
           <tr>

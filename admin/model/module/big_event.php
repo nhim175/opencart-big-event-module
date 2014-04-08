@@ -1,4 +1,7 @@
 <?php
+
+# GNeill, this file looks like it's not really need based on how simple this module is.
+
 ################################################################################################
 #  DIY Module Builder for Opencart 1.5.1.x From HostJars http://opencart.hostjars.com    	   #
 ################################################################################################
@@ -16,9 +19,9 @@ class ModelModuleMyModule extends Model {
 	// function called install(). The install() function is called automatically by OC versions 1.4.9.x, and maybe 1.4.8.x when a module is
 	// installed in admin.
 	public function createModuleTables() {
-		$query = $this->db->query("CREATE TABLE IF NOT EXISTS " . DB_PREFIX . "blog (blog_id INT(11) AUTO_INCREMENT, sort_order INT(3), status INT(1), date DATE, PRIMARY KEY (blog_id))");
-		$query = $this->db->query("CREATE TABLE IF NOT EXISTS " . DB_PREFIX . "blog_description (blog_id INT(11), language_id INT(11), title VARCHAR(64), description text, PRIMARY KEY (blog_id, language_id))");
-		$query = $this->db->query("CREATE TABLE IF NOT EXISTS " . DB_PREFIX . "blog_to_store (blog_id INT(11), store_id INT(11), PRIMARY KEY (blog_id, store_id))");
+#		$query = $this->db->query("CREATE TABLE IF NOT EXISTS " . DB_PREFIX . "blog (blog_id INT(11) AUTO_INCREMENT, sort_order INT(3), status INT(1), date DATE, PRIMARY KEY (blog_id))");
+#		$query = $this->db->query("CREATE TABLE IF NOT EXISTS " . DB_PREFIX . "blog_description (blog_id INT(11), language_id INT(11), title VARCHAR(64), description text, PRIMARY KEY (blog_id, language_id))");
+#		$query = $this->db->query("CREATE TABLE IF NOT EXISTS " . DB_PREFIX . "blog_to_store (blog_id INT(11), store_id INT(11), PRIMARY KEY (blog_id, store_id))");
 	}	
 }
 ?>

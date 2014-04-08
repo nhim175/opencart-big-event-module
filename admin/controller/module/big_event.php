@@ -52,6 +52,7 @@ class ControllerModuleBigEvent extends Controller {
 				'entry_status',
 				'entry_sort_order',
 				'entry_link',
+				'entry_once_per_session',
 				'button_save',
 				'button_cancel',
 				'button_add_module',
@@ -93,6 +94,8 @@ class ControllerModuleBigEvent extends Controller {
 		
 		$module = $this->model_setting_setting->getSetting('big_event');
 		$image = $module['image'];
+		$this->data['once_per_session'] = "" | $module['once_per_session'];
+
 		$this->data['link'] = "" | $module['link'];
 		$this->data['image'] = $image;
 		if (file_exists(DIR_IMAGE . $image)) {
@@ -149,7 +152,6 @@ class ControllerModuleBigEvent extends Controller {
 			'common/header',
 			'common/footer',
 		);
-
 		//Send the output.
 		$this->response->setOutput($this->render());
 	}
@@ -171,7 +173,5 @@ class ControllerModuleBigEvent extends Controller {
 			return FALSE;
 		}	
 	}
-
-
 }
 ?>

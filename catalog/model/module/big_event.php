@@ -1,4 +1,5 @@
 <?php
+# GNeill, based on how simple this module is .. this class is not needed
 ################################################################################################
 #  DIY Module Builder for Opencart 1.5.1.x From HostJars http://opencart.hostjars.com 		   #
 ################################################################################################
@@ -9,11 +10,11 @@ class ModelModuleMyModule extends Model {
 	//in other model files, as you can just as easily pull through those models to use their functions.
 	
 	//Example function to get customer firstnames:
-	function getCustomerFirstnames() {
-		$query = "SELECT firstname FROM " . DB_PREFIX . "customer";
-		$result = $this->db->query($query);
-		return $result->rows;
-	}
+	#function getCustomerFirstnames() {
+		#$query = "SELECT firstname FROM " . DB_PREFIX . "customer";
+		#$result = $this->db->query($query);
+		#return $result->rows;
+	#}
 	
 }
 

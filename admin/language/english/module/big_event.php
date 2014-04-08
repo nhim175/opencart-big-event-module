@@ -44,6 +44,7 @@ $_['entry_position']      = 'Position:';
 $_['entry_status']        = 'Status:';
 $_['entry_sort_order']    = 'Sort Order:';
 $_['entry_link']    = 'Link:';
+$_['entry_once_per_session'] = 'Once per session:';
 
 // Error
 $_['error_permission'] = 'Warning: You do not have permission to modify module My Module!';
